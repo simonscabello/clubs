@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
  * @method static create(array $all)
@@ -14,8 +15,8 @@ class Club extends Model
 
     protected $fillable = ['name', 'id_state'];
 
-    public function states()
+    public function states(): BelongsTo
     {
-        $this->belongsTo('App\State');
+        return $this->belongsTo('App\State');
     }
 }

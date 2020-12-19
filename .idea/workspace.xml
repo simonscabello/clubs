@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2eab19b-6970-4769-b6c5-f59010432168" name="Default Changelist" comment="Criação das models, tabelas relacionadas e suas controllers.">
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatesController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/State.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_12_005546_state.php" afterDir="false" />
+    <list default="true" id="e2eab19b-6970-4769-b6c5-f59010432168" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ClubsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreTeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreTeamsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Teams.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Club.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_15_231505_teams.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_231505_club.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/State.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/State.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,8 +147,17 @@
       <workItem from="1608078980499" duration="43000" />
       <workItem from="1608121053330" duration="608000" />
       <workItem from="1608307774002" duration="28000" />
-      <workItem from="1608307819146" duration="20737000" />
+      <workItem from="1608307819146" duration="20861000" />
+      <workItem from="1608348252951" duration="291000" />
     </task>
+    <task id="LOCAL-00001" summary="Criação das models, tabelas relacionadas e suas controllers.">
+      <created>1608342588246</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608342588246</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +173,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criação das models, tabelas relacionadas e suas controllers." />

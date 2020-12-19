@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Scopes\VisibleScope;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
  * @method static create(array $all)
@@ -22,8 +23,8 @@ class State extends Model
 //        static::addGlobalScope(new VisibleScope);
 //    }
 
-    public function clubs()
+    public function clubs(): HasMany
     {
-        $this->hasMany('App\Club');
+        return $this->hasMany('App\Club');
     }
 }
