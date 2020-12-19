@@ -20,7 +20,7 @@ class StoreTeamsController extends FormRequest
         return [
             'name' => 'required|min:3|max:20',
             'state' => 'required|min:2|max:2',
-            'status' => 'required|integer|digits:1',
+            'position' => 'required|integer|digits:1',
         ];
     }
 
@@ -32,9 +32,9 @@ class StoreTeamsController extends FormRequest
             'name.max' => 'Por favor, informe apenas o nome principal do time.',
             'state.required' => 'Por favor, informe o estado do time.',
             'state.min.max' => 'Por favor, informe a sigla do estado do time.',
-            'status.required' => 'Por favor, informe o status do time.',
-            'status.integer' => 'Por favor, informe um número inteiro.',
-            'status.digits' => 'Por favor, informe apenas um número'
+            'position.required' => 'Por favor, informe o status do time.',
+            'position.integer' => 'Por favor, informe um número inteiro.',
+            'position.digits' => 'Por favor, informe a posição do time'
         ];
     }
 

@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2eab19b-6970-4769-b6c5-f59010432168" name="Default Changelist" comment="">
+    <list default="true" id="e2eab19b-6970-4769-b6c5-f59010432168" name="Default Changelist" comment="Criação das models, tabelas relacionadas e suas controllers.">
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatesController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/State.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_12_12_005546_state.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/TeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ClubsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreTeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreTeamsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Teams.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Club.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_12_15_231505_teams.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_12_15_231505_club.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -9,7 +18,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -123,6 +132,11 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\simon\Documents\personalprojects\teamsbr\app\Http\Controllers\API" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -137,11 +151,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608073440903</updated>
-      <workItem from="1608073443757" duration="3703000" />
+      <workItem from="1608073443757" duration="4742000" />
+      <workItem from="1608078980499" duration="43000" />
+      <workItem from="1608121053330" duration="608000" />
+      <workItem from="1608307774002" duration="28000" />
+      <workItem from="1608307819146" duration="20737000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Criação das models, tabelas relacionadas e suas controllers." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação das models, tabelas relacionadas e suas controllers." />
   </component>
 </project>
