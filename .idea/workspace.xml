@@ -3,11 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e2eab19b-6970-4769-b6c5-f59010432168" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Club.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Club.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/ClubsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/ClubsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/API/StatesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/API/StatesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StoreTeamsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StoreClubsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/State.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/State.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +148,7 @@
       <workItem from="1608307774002" duration="28000" />
       <workItem from="1608307819146" duration="20861000" />
       <workItem from="1608348252951" duration="501000" />
-      <workItem from="1608582551064" duration="6092000" />
+      <workItem from="1608582551064" duration="6948000" />
     </task>
     <task id="LOCAL-00001" summary="Criação das models, tabelas relacionadas e suas controllers.">
       <created>1608342588246</created>
@@ -169,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608348626133</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Criação das funções para retornar os dados relacionados entre clube e estado. Criação dos Requests para validaçao dos dados.">
+      <created>1608591967049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608591967049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +192,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Criação das models, tabelas relacionadas e suas controllers." />
     <MESSAGE value="Correção nas funções das models de relacionamento." />
-    <option name="LAST_COMMIT_MESSAGE" value="Correção nas funções das models de relacionamento." />
+    <MESSAGE value="Criação das funções para retornar os dados relacionados entre clube e estado. Criação dos Requests para validaçao dos dados." />
+    <option name="LAST_COMMIT_MESSAGE" value="Criação das funções para retornar os dados relacionados entre clube e estado. Criação dos Requests para validaçao dos dados." />
   </component>
 </project>
