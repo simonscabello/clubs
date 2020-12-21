@@ -28,7 +28,6 @@ class StoreStateController extends FormRequest
             'state.min' => 'Por favor, verifique o nome do estado.',
             'state.max' => 'Por favor, verifique o nome do estado.',
         ];
-
     }
 
     protected function failedValidation(Validator $validator)
