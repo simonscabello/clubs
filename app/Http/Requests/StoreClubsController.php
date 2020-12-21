@@ -6,7 +6,7 @@ use Illuminate\Contracts\Validation\Validator;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
-class StoreTeamsController extends FormRequest
+class StoreClubsController extends FormRequest
 {
 
     public function authorize(): bool
@@ -19,8 +19,7 @@ class StoreTeamsController extends FormRequest
     {
         return [
             'name' => 'required|min:3|max:20',
-            'state' => 'required|min:2|max:2',
-            'position' => 'required|integer|digits:1',
+            'id_state' => 'required|numeric|digits:1'
         ];
     }
 
@@ -30,11 +29,9 @@ class StoreTeamsController extends FormRequest
             'name.required' => 'Por favor, informe o nome do time.',
             'name.min' => 'Por favor, informe o nome completo do time.',
             'name.max' => 'Por favor, informe apenas o nome principal do time.',
-            'state.required' => 'Por favor, informe o estado do time.',
-            'state.min.max' => 'Por favor, informe a sigla do estado do time.',
-            'position.required' => 'Por favor, informe o status do time.',
-            'position.integer' => 'Por favor, informe um número inteiro.',
-            'position.digits' => 'Por favor, informe a posição do time'
+            'id_state.required' => 'Por favor, insira o ID do estado.',
+            'id_state.numeric' => 'Por favor, o ID do estado deve ser um número.',
+            'id_state.digits' => 'Por favor, informe apenas um número.'
         ];
     }
 

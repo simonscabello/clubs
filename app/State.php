@@ -16,15 +16,10 @@ class State extends Model
 
     protected $fillable = ['state'];
 
-//    protected static function boot()
-//    {
-//        parent::boot();
-//
-//        static::addGlobalScope(new VisibleScope);
-//    }
+//    protected $with = ['clubs'];
 
     public function clubs(): HasMany
     {
-        return $this->hasMany('App\Club');
+        return $this->hasMany('App\Club', 'id_state');
     }
 }

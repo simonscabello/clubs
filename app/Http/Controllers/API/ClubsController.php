@@ -3,27 +3,26 @@
 namespace App\Http\Controllers\API;
 
 use App\Club;
-use App\State;
 use Illuminate\Http\JsonResponse;
 use App\Http\Controllers\Controller;
-use Illuminate\Http\Request;
-use App\Http\Requests\StoreTeamsController;
+use App\Http\Requests\StoreClubsController;
 
 class ClubsController extends Controller
 {
 
     public function index(): JsonResponse
     {
-        $clubs = Club::all();
+        $clubs = Club::with('states')->get();
+//        $clubs = Club::all();
 
         return response()->json(['clubs' => $clubs]);
     }
 
-    public function store(Request $request): JsonResponse
+    public function store(StoreClubsController $request): JsonResponse
     {
         $clubs = Club::create($request->all());
 
-        return response()->json(['team' => $clubs]);
+        return response()->json(['club' => $clubs]);
     }
 
     public function show(Club $club): JsonResponse
@@ -32,30 +31,34 @@ class ClubsController extends Controller
             return response()->json(['message' => 'Club not found.'], 404);
         }
 
+        $club->load('states'); // usar quando nao estiver usando with na model
+
         return response()->json(['club' => $club]);
     }
 
-    public function update(Request $request, $id): JsonResponse
+    public function update(StoreClubsController $request, $id): JsonResponse
     {
-        $clubs = Club::find($id);
-        if (!$clubs){
+        $club = Club::find($id);
+
+        if (!$club){
             return response()->json(['message' => 'Club not found.'], 404);
         }
 
-        $clubs->update($request->all());
+        $club->update($request->all());
 
-        return response()->json(['club' => $clubs]);
+        return response()->json(['club' => $club], 200);
     }
 
     public function destroy($id): JsonResponse
     {
-        $teams = Club::find($id);
-        if (!$teams){
-            return response()->json(['message' => 'Time não encontrado.'], 404);
+        $club = Club::find($id);
+
+        if (!$club){
+            return response()->json(['message' => 'Club not found.'], 404);
         }
 
-        $teams->delete();
+        $club->delete();
 
-        return response()->json(['message' => 'Time deletado com sucesso.']);
+        return response()->json(['message' => 'Club deleted.'], 200);
     }
 }
