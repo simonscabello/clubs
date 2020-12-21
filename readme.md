@@ -1,6 +1,6 @@
 Passos para rodar uma App em laravel.
 
-1. Git Clone 
+1. Git Clone https://github.com/simonscabello/clubs.git
 2. Configurar o arquivo .env e o MySql. 
 3. Rodar o código no terminal para instalar as dependências-> composer install 
 4. Rodar o codigo no terminal-> php artisan key:generate
